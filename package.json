@@ -17,7 +17,8 @@
     "build:deploy": "npm run build:client && npm run build:server",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "server": "node server.js"
+    "server": "node server.js",
+    "postinstall": "npm run build:deploy"
   },
   "devDependencies": {
     "concurrently": "^3.5.1"
