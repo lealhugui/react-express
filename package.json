@@ -1,0 +1,25 @@
+{
+  "name": "react-express",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:8080",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build:client": "react-scripts build",
+    "build:server": "echo \"TODO: server deployment build\"",
+    "build:deploy": "npm run build:client && npm run build:server",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "server": "node server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
